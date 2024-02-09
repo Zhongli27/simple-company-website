@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
         *{
            box-sizing: border-box;
            margin:0;
@@ -46,7 +49,7 @@
         display:block;
         background-image: url("elv1.jpg");
         background-size: cover;
-        height: 500px;
+        height: 550px;
         background-repeat: no-repeat;
         background-position:center;
         position: relative;
@@ -56,14 +59,14 @@
         background-color:#2A2273B3;
         opacity:1;
         padding:30px;
-        height:500px;
+        height:550px;
         clip-path: polygon(0 0, 60% 0, 50% 100%, 0% 100%);
        }
 
        .txt{
          position:absolute;
          color:#f4680b;
-         top:200px;
+         top:210px;
          z-index:1;
          font-size:70px;
          left:60px;
@@ -75,7 +78,7 @@
 
        .txt2{
           position:relative;
-          top:-200px;
+          top:-260px;
           font-weight:normal;
           margin-left:80px;
           color:#ffffff;
@@ -87,7 +90,65 @@
        .txt-wrap2{
         display:block;
        }
+       
+       .img2{
+        background-image: url("data1.jpg");
+        height:500px;
+        width:600px;
+        padding:40px;
+        margin:30px 100px 60px;
+        background-repeat: no-repeat;
+       }
+        .txt3{
+            position:absolute;
+            top:710px;
+            left:750px;
+            font-size:40px;
+            font-family: "Poppins",sans-serif;
+            font-weight:700;
+            font-style:normal;
+            margin:0 -13px;
+            color:#ff6000;
+            line-height:60px;
+        }
+        .txt-wrap3{
+            display: block;
+            color:#292662;
+            font-size:45px;
+            line-height:50px;
+        }
 
+        .parag1{
+            display:block;
+            position:absolute;
+            top:880px;
+            left:730px;
+            font-size:16px;
+            font-family:Roboto;
+            line-height:0.6cm;
+            color:383838;
+        }
+
+        .btn{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            position:absolute;
+            top:1000px;
+            left:715px;
+            margin:5px;
+        }
+
+        .btn > input{
+            margin-left: 20px;
+            padding:8px 12px;
+            height:45px;
+            background-color: #ff6000;
+            border:none;
+            font-size: 20px;
+            font-family: Roboto;
+            color:#ffffff;
+        }
     </style>
 </head>
 <body>
@@ -105,6 +166,23 @@
         <h2 class="txt">Structured <span class="txt-wrap">Cabling</span></h2>
         <div class="img"><span class="wrapper1"></span></div>
         <h3 class="txt2">NOW SERVICING<span class="txt-wrap2">METRO MANILA & VISAYAS AREAS</span></h3>
+      </section>
+
+      <section>
+        <div class="img2"></div>
+        <h2 class="txt3">DATA CABLE, INC.<span class="txt-wrap3">Our Commitment To <br>Quality</br></span></h2>
+        <p class="parag1">
+           <br> We have completed thousands of structured cabling installations and have</br> insured that </<br>both our high level of quality and industry standards are met on</br> every job.
+        </p>
+
+        <div class="btn">
+            <input type="button" id="button1" value="ABOUT US"/>
+            <input type="button" id="button2" value="CONTACT US"/>
+        </div>
+      </section>
+      
+      <section>
+         
       </section>
     </main>
 </body>
